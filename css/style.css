@@ -17,10 +17,10 @@ main {
   align-items: center;
 }
 .card {
-  width: 400px;
+  width: 350px;
   background-color: hsl(0, 0%, 12%);
   text-align: center;
-  border-radius: 10px;
+  border-radius: 13px;
   padding: 10px;
 }
 @media (max-width: 375px) {
@@ -31,7 +31,7 @@ main {
 .card img {
   border-radius: 50%;
   width: 25%;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .card .info {
   color: hsl(0, 0%, 100%);
@@ -64,16 +64,11 @@ main {
   padding: 15px;
   border: none;
   border-radius: 10px;
+  color: white;
+  font-weight: 700;
 }
 .card .buttons button:hover {
   background-color: hsl(75, 94%, 57%);
   cursor: pointer;
-}
-.card .buttons button:hover a {
   color: hsl(0, 0%, 20%);
-}
-.card .buttons button a {
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
 }
