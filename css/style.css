@@ -1,0 +1,79 @@
+:root {
+  --para-font-size: 14px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+main {
+  background-color: hsl(0, 0%, 8%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 400px;
+  background-color: hsl(0, 0%, 12%);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+@media (max-width: 375px) {
+  .card {
+    width: 300px;
+  }
+}
+.card img {
+  border-radius: 50%;
+  width: 25%;
+  margin: 10px 0;
+}
+.card .info {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: var(--para-font-size);
+  margin-bottom: 20px;
+}
+.card .info h1 {
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.card .info address {
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 25px;
+  font-style: normal;
+}
+.card .info p {
+  font-weight: 400;
+}
+.card .buttons {
+  display: grid;
+  grid-template-columns: 80%;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.card .buttons button {
+  background-color: hsl(0, 0%, 20%);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+}
+.card .buttons button:hover {
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+}
+.card .buttons button:hover a {
+  color: hsl(0, 0%, 20%);
+}
+.card .buttons button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
